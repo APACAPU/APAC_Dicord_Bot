@@ -52,6 +52,12 @@ class Main(commands.Cog):
         except:
             pass
 
+    # Welcome
+
+    # Kick
+
+    # Ban
+
 
 def setup(client):
     client.add_cog(Main(client))
