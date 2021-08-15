@@ -1,3 +1,102 @@
-{
-    
-}
+[
+    {
+        "emoji": "\uD83D\uDC65",
+        "role": "Foundation"
+    },
+    {
+        "emoji": "\uD83D\uDCDA",
+        "role": "Diploma"
+    },
+    {
+        "emoji": "\uD83C\uDF93",
+        "role": "Degree"
+    },
+    {
+        "emoji": "\uD83D\uDCBC",
+        "role": "Alumni"
+    },
+    {
+        "emoji": "\uD83C\uDFAE",
+        "role": "Computing | Technology | Games Development"
+    },
+    {
+        "emoji": "\uD83D\uDDFA",
+        "role": "Business | Management | Marketing | Tourism"
+    },
+    {
+        "emoji": "\uD83D\uDDEF",
+        "role": "Media | International Relations | Psychology"
+    },
+    {
+        "emoji": "\uD83D\uDCB0",
+        "role": "Accounting | Banking | Finance | Actuarial"
+    },
+    {
+        "emoji": "\uD83C\uDFA8",
+        "role": "Design | Advertising | Animation"
+    },
+    {
+        "emoji": "\uD83D\uDDA5",
+        "role": "Information Technology"
+    },
+    {
+        "emoji": "\u2699",
+        "role": "Engineering"
+    },
+    {
+        "emoji": "\uD83D\uDEE1",
+        "role": "Software Engineering"
+    },
+    {
+        "emoji": "\uD83D\uDD75",
+        "role": "Cybersecurity"
+    },
+    {
+        "emoji": "\uD83D\uDDB1",
+        "role": "Intelligent System"
+    },
+    {
+        "emoji": "\uD83D\uDCFD",
+        "role": "Multimedia Technology"
+    },
+    {
+        "emoji": "\uD83D\uDCCA",
+        "role": "CS in Data Analytics"
+    },
+    {
+        "emoji": "\uD83D\uDCE1",
+        "role": "CS in Digital Forensics"
+    },
+    {
+        "emoji": "\u2601",
+        "role": "IT in Cloud Computing"
+    },
+    {
+        "emoji": "\uD83E\uDDD1\u200D\uD83D\uDCBB",
+        "role": "IT in Network Computing"
+    },
+    {
+        "emoji": "\uD83D\uDCF1",
+        "role": "IT in Mobile Technology"
+    },
+    {
+        "emoji": "\uD83C\uDF10",
+        "role": "IT in Internet Of Things"
+    },
+    {
+        "emoji": "\uD83C\uDF00",
+        "role": "IT in Digital Transformation"
+    },
+    {
+        "emoji": "\uD83D\uDCB3",
+        "role": "IT in Fintech"
+    },
+    {
+        "emoji": "\u26D3",
+        "role": "IT in Business Information System"
+    },
+    {
+        "emoji": "\uD83D\uDC7E",
+        "role": "Multimedia Technology in AR/VR"
+    }
+]
