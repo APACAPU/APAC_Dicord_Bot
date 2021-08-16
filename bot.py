@@ -14,5 +14,4 @@ client = commands.Bot(command_prefix=main.Main.get_prefix, intents=intents, help
 for cog in cogs:
     cog.setup(client)
 
-# client.run(os.environ.get('TOKEN'))
-client.run('ODcyODU4ODU1MjkyNDMyNDE1.YQv_KA.xeSljL7BlDVl25rik2qdd48tQsI')
+client.run(os.environ.get('TOKEN'))
