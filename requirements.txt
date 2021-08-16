@@ -52,7 +52,6 @@ pytest==6.2.4
 python-dateutil==2.7.5
 pytz==2021.1
 pywin32-ctypes==0.2.0
-PyYAML==3.13
 readme-renderer==29.0
 regex==2021.8.3
 requests==2.25.1
