@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 import json
-import PIL
+import requests
+from PIL import Image, ImageDraw, ImageFont
 
 
 class Main(commands.Cog):
@@ -54,6 +55,34 @@ class Main(commands.Cog):
             pass
 
     # Welcome
+    @commands.command("on_member_join")
+    async def join(self, member):
+        guild = self.client.get_guild(862713178717814815)
+        channel = guild.get_channel(862713178717814818)
+        member_count = guild.member_count
+
+        img = Image.open("DISCORD WELCOME-01.png")
+        img = img.copy()
+
+        member_im = Image.open(requests.get(
+            member.avatar_url, stream=True).raw)
+        member_im = member_im.resize((310, 300), Image.LANCZOS)
+
+        img.paste(member_im, (int(1200/3)+25, int(675/4)))
+        msg = "Welcome " + member.name + "\n(Member " + str(member_count) + ")"
+        draw = ImageDraw.Draw(img)
+        comfortaa = ImageFont.truetype("Comfortaa-Regular.ttf", 60)
+        w, h = draw.textsize(msg, font=comfortaa)
+        draw.text(((1200-w)/2, (675-h)/8*7), msg,
+                  fill="black", font=comfortaa)
+        img.save("new.png", "PNG")
+
+        await channel.send(f"Hey {member.mention}, welcome to **APAC!**\n**GET STARTED BY**\n1. Read the rules in <#873865040934076416>\n2. Claim your roles at <#873267204131532820>\n3. Read about the different channels and what they are for at <#873866137140600832>\n4. Read the <#873875922619613244> in case you miss any\n5. Share some stories at <#863299302029393920>, post some memes at <#873187472153149451> and enjoy yourself\n6. Send some feedback at <#863298970456162305> or provide some suggestions at <#873187514561753149>\n", file=discord.File("new.png"))
+
+        for channel in member.guild.channels:
+            if channel.name.startswith('Peep'):
+                await channel.edit(name=f'Peep: {str(member.guild.member_count)}')
+                break
 
     # Kick
     @commands.command()
