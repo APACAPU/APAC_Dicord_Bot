@@ -1,9 +1,10 @@
 import discord
 from discord.ext import commands
 import main
+import reactrole
 import os
 
-cogs = [main]
+cogs = [main, reactrole]
 
 intents = discord.Intents.default()
 intents.members = True
