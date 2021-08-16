@@ -70,7 +70,7 @@ class Main(commands.Cog):
 
         img.paste(member_im, (int(1200/3)+25, int(675/4)))
         msg = "Welcome " + member.name + \
-            "\n\t(Member " + str(member_count) + ")"
+            "\n   (Member " + str(member_count) + ")"
         draw = ImageDraw.Draw(img)
         comfortaa = ImageFont.truetype("Comfortaa-Bold.ttf", 60)
         w, h = draw.textsize(msg, font=comfortaa)
