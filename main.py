@@ -55,7 +55,7 @@ class Main(commands.Cog):
             pass
 
     # Welcome
-    @commands.command("on_member_join")
+    @commands.Cog.listener("on_member_join")
     async def join(self, member):
         guild = self.client.get_guild(862713178717814815)
         channel = guild.get_channel(862713178717814818)
