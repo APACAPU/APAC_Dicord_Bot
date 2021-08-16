@@ -79,11 +79,6 @@ class Main(commands.Cog):
 
         await channel.send(f"Hey {member.mention}, welcome to **APAC!**\n**GET STARTED BY**\n1. Read the rules in <#873865040934076416>\n2. Claim your roles at <#873267204131532820>\n3. Read about the different channels and what they are for at <#873866137140600832>\n4. Read the <#873875922619613244> in case you miss any\n5. Share some stories at <#863299302029393920>, post some memes at <#873187472153149451> and enjoy yourself\n6. Send some feedback at <#863298970456162305> or provide some suggestions at <#873187514561753149>\n", file=discord.File("new.png"))
 
-        for channel in member.guild.channels:
-            if channel.name.startswith('Peep'):
-                await channel.edit(name=f'Peep: {str(member.guild.member_count)}')
-                break
-
     # Kick
     @commands.command()
     async def kick(self, ctx, member: discord.Member, *, reason=None):
