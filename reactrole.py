@@ -10,14 +10,14 @@ class React(commands.Cog):
         self.react_messages = [875602307033739285,
                                875602205804216321, 875601733819187240]
 
-    # Add reaction
-    @commands.command(pass_context=True)
-    async def addreact(self, ctx, message_id, emoji):
-        if message_id in self.react_messages:
-            await self.client.add_reaction(ctx.message, emoji)
-            await self.client.say("Reaction added")
+    # Add react
+    @commands.command(aliases=['ar'])
+    async def addreact(self, ctx, message: discord.Message, emoji):
+        if message != None and emoji != None:
+            await message.add_reaction(emoji)
+
         else:
-            await self.client.say("Invalid message ID")
+            await ctx.send("Invalid argument.")
 
     # React role
     @commands.Cog.listener("on_raw_reaction_add")
