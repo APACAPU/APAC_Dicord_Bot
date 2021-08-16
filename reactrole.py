@@ -19,6 +19,16 @@ class React(commands.Cog):
         else:
             await ctx.send("Invalid argument.")
 
+    # Add bundles react
+    @commands.command(aliases=['ab'])
+    async def add_bundles_react(self, ctx, message: discord.Message, *emoji):
+        if message != None and emoji != None:
+            for emote in emoji:
+                await message.add_reaction(emote)
+
+        else:
+            await ctx.send("Invalid argument.")
+
     # React role
     @commands.Cog.listener("on_raw_reaction_add")
     async def add_role(self, payload):
