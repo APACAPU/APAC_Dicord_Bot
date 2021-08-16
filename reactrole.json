@@ -49,11 +49,11 @@
     },
     {
         "emoji": "🕵️",
-        "role": "Cybersecurity"
+        "role": "Cyber Security"
     },
     {
         "emoji": "🖱️",
-        "role": "Intelligent System"
+        "role": "Intelligent Systems"
     },
     {
         "emoji": "📽️",
@@ -81,7 +81,7 @@
     },
     {
         "emoji": "🌐",
-        "role": "IT in Internet Of Things"
+        "role": "IT in Internet of Things"
     },
     {
         "emoji": "\uD83C\uDF00",
@@ -89,14 +89,14 @@
     },
     {
         "emoji": "💳",
-        "role": "IT in Fintech"
+        "role": "IT in FinTech"
     },
     {
         "emoji": "⛓️",
-        "role": "IT in Business Information System"
+        "role": "IT in Business Information Systems"
     },
     {
         "emoji": "👾",
-        "role": "Multimedia Technology in AR/VR"
+        "role": "MT in VR/AR"
     }
 ]
