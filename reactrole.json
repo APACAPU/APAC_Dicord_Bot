@@ -20,11 +20,11 @@
         "role": "Computing | Technology | Games Development"
     },
     {
-        "emoji": "\uD83D\uDDFA",
+        "emoji": "🗺️",
         "role": "Business | Management | Marketing | Tourism"
     },
     {
-        "emoji": "\uD83D\uDDEF",
+        "emoji": "🗯️",
         "role": "Media | International Relations | Psychology"
     },
     {
@@ -36,27 +36,27 @@
         "role": "Design | Advertising | Animation"
     },
     {
-        "emoji": "\uD83D\uDDA5",
+        "emoji": "🖥️",
         "role": "Information Technology"
     },
     {
-        "emoji": "\u2699",
+        "emoji": "⚙️",
         "role": "Engineering"
     },
     {
-        "emoji": "\uD83D\uDEE1",
+        "emoji": "🛡️",
         "role": "Software Engineering"
     },
     {
-        "emoji": "\uD83D\uDD75",
+        "emoji": "🕵️",
         "role": "Cybersecurity"
     },
     {
-        "emoji": "\uD83D\uDDB1",
+        "emoji": "🖱️",
         "role": "Intelligent System"
     },
     {
-        "emoji": "\uD83D\uDCFD",
+        "emoji": "📽️",
         "role": "Multimedia Technology"
     },
     {
@@ -68,7 +68,7 @@
         "role": "CS in Digital Forensics"
     },
     {
-        "emoji": "\u2601",
+        "emoji": "☁️",
         "role": "IT in Cloud Computing"
     },
     {
@@ -80,7 +80,7 @@
         "role": "IT in Mobile Technology"
     },
     {
-        "emoji": "\uD83C\uDF10",
+        "emoji": "🌐",
         "role": "IT in Internet Of Things"
     },
     {
@@ -88,15 +88,15 @@
         "role": "IT in Digital Transformation"
     },
     {
-        "emoji": "\uD83D\uDCB3",
+        "emoji": "💳",
         "role": "IT in Fintech"
     },
     {
-        "emoji": "\u26D3",
+        "emoji": "⛓️",
         "role": "IT in Business Information System"
     },
     {
-        "emoji": "\uD83D\uDC7E",
+        "emoji": "👾",
         "role": "Multimedia Technology in AR/VR"
     }
 ]
