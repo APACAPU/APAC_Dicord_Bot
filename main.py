@@ -59,6 +59,7 @@ class Main(commands.Cog):
     async def join(self, member):
         guild = self.client.get_guild(862713178717814815)
         channel = guild.get_channel(862713178717814818)
+        role = discord.utils.get(member.guild.roles, name='Member')
         member_count = guild.member_count
 
         img = Image.open("DISCORD WELCOME-01.png")
@@ -77,7 +78,7 @@ class Main(commands.Cog):
         draw.text(((1200-w)/2, (675-h)/8*7), msg,
                   fill="black", font=comfortaa)
         img.save("new.png", "PNG")
-
+        await member.add_roles(role)
         await channel.send(f"Hey {member.mention}, welcome to **APAC!**\n**GET STARTED BY**\n1. Read the rules in <#873865040934076416>\n2. Claim your roles at <#873267204131532820>\n3. Read about the different channels and what they are for at <#873866137140600832>\n4. Read the <#873875922619613244> in case you miss any\n5. Share some stories at <#863299302029393920>, post some memes at <#873187472153149451> and enjoy yourself\n6. Send some feedback at <#863298970456162305> or provide some suggestions at <#873187514561753149>\n", file=discord.File("new.png"))
 
     # Kick
