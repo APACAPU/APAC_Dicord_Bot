@@ -79,7 +79,7 @@ class Main(commands.Cog):
                   fill="white", font=comfortaa)
         img.save("new.png", "PNG")
         await member.add_roles(role)
-        await channel.send(f"Hey {member.mention}, welcome to **APAC!**\n**GET STARTED BY**\n1. Read the rules in <#873865040934076416>\n2. Claim your roles at <#873267204131532820>\n3. Read about the different channels and what they are for at <#873866137140600832>\n4. Read the <#873875922619613244> in case you miss any\n5. Share some stories at <#863299302029393920>, post some memes at <#873187472153149451> and enjoy yourself\n6. Send some feedback at <#863298970456162305> or provide some suggestions at <#873187514561753149>\n", file=discord.File("new.png"))
+        await channel.send(f"Hey {member.mention}, welcome to **APAC!**\n**GET STARTED BY**\n1. Reading the rules in <#873865040934076416>\n2. Claiming your roles at <#873267204131532820>\n3. Reading about the different channels and what they are for at <#873866137140600832>\n4. Reading the <#873875922619613244> in case you miss any\n5. Sharing some stories at <#863299302029393920>, post some memes at <#873187472153149451> and enjoy yourself\n6. Sending some feedback at <#863298970456162305> or provide some suggestions at <#873187514561753149>\n", file=discord.File("new.png"))
 
     # Kick
     @commands.command()
