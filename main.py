@@ -115,7 +115,7 @@ class Main(commands.Cog):
     @commands.command()
     async def quote(self, ctx):
         data = requests.get("https://zenquotes.io/api/random")
-        details = json.loads("quotes.json")
+        details = json.loads(data.txt)
         quote = data[0]['q'] + ' - ' + data[0]['a']
         await ctx.send(quote)
 
