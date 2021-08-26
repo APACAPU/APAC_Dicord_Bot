@@ -71,12 +71,15 @@ class Main(commands.Cog):
         member_im = member_im.resize((310, 300), Image.LANCZOS)
 
         img.paste(member_im, (int(1200/3)+25, int(675/4)))
-        msg = "Welcome " + member.name + \
-            "\n  (Member " + str(member_count) + ")"
+        msg = "Welcome " + member.name
+        member_count = "(Member " + str(member_count) + ")"
         draw = ImageDraw.Draw(img)
         comfortaa = ImageFont.truetype("Comfortaa-Bold.ttf", 60)
         w, h = draw.textsize(msg, font=comfortaa)
+        width, height = draw.textsize(member_count, font=comfortaa)
         draw.text(((1200-w)/2, (675-h)/8*7), msg,
+                  fill="white", font=comfortaa)
+        draw.text(((1200-width)/2, (675-height)/10*9), member_count,
                   fill="white", font=comfortaa)
         img.save("new.png", "PNG")
         await member.add_roles(role)
