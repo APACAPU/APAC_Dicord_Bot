@@ -77,7 +77,7 @@ class Main(commands.Cog):
         comfortaa = ImageFont.truetype("Comfortaa-Bold.ttf", 60)
         w, h = draw.textsize(msg, font=comfortaa)
         width, height = draw.textsize(member_count, font=comfortaa)
-        draw.text(((1200-w)/2, (675-h)/8*7), msg,
+        draw.text(((1200-w)/2, (675-h)/25*21), msg,
                   fill="white", font=comfortaa)
         draw.text(((1200-width)/2, (675-height)/25*24), member_count,
                   fill="white", font=comfortaa)
