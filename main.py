@@ -79,7 +79,7 @@ class Main(commands.Cog):
         width, height = draw.textsize(member_count, font=comfortaa)
         draw.text(((1200-w)/2, (675-h)/8*7), msg,
                   fill="white", font=comfortaa)
-        draw.text(((1200-width)/2, (675-height)/20*19), member_count,
+        draw.text(((1200-width)/2, (675-height)/25*24), member_count,
                   fill="white", font=comfortaa)
         img.save("new.png", "PNG")
         await member.add_roles(role)
