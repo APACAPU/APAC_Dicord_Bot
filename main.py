@@ -115,13 +115,14 @@ class Main(commands.Cog):
     @commands.command()
     async def quote(self, ctx):
         data = requests.get("https://zenquotes.io/api/random")
+        details = json.loads("quotes.json")
         quote = data[0]['q'] + ' - ' + data[0]['a']
         await ctx.send(quote)
 
     # Nominate
     @commands.command()
     async def nominate(self, message):
-        users = [member for member in message.channel.members if "Bot" not in [
+        users = [member for member in message.channel.members if "bot" not in [
             y.name.lower() for y in member.roles] and member != str(message.author)]
         user = rd.choice(users)
         await message.channel.send(user.mention + " had been nominated.")
