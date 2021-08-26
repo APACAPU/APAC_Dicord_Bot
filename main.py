@@ -3,6 +3,7 @@ from discord.ext import commands
 import json
 import requests
 from PIL import Image, ImageDraw, ImageFont
+import random as rd
 
 
 class Main(commands.Cog):
@@ -71,7 +72,7 @@ class Main(commands.Cog):
 
         img.paste(member_im, (int(1200/3)+25, int(675/4)))
         msg = "Welcome " + member.name + \
-            "\n   (Member " + str(member_count) + ")"
+            "\n  (Member " + str(member_count) + ")"
         draw = ImageDraw.Draw(img)
         comfortaa = ImageFont.truetype("Comfortaa-Bold.ttf", 60)
         w, h = draw.textsize(msg, font=comfortaa)
@@ -109,6 +110,21 @@ class Main(commands.Cog):
             embed.set_thumbnail(url=member.avatar_url)
             embed.add_field(name="Reason", value=f"{reason}")
             await ctx.send(embed=embed)
+
+    # Quote
+    @commands.command()
+    async def quote(self, ctx):
+        data = requests.get("https://zenquotes.io/api/random")
+        quote = data[0]['q'] + ' - ' + data[0]['a']
+        await ctx.send(quote)
+
+    # Nominate
+    @commands.command()
+    async def nominate(self, message):
+        users = [member for member in message.channel.members if "Bot" not in [
+            y.name.lower() for y in member.roles] and member != str(message.author)]
+        user = rd.choice(users)
+        await message.channel.send(user.mention + " had been nominated.")
 
 
 def setup(client):
